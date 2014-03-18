@@ -1,0 +1,16 @@
+<p>
+	<b>Full Name:</b> <%= @contact.full_name %>
+</p>
+<p>
+	<b>Phone Number:</b> <%= @contact.phone_number %>
+</p>
+<p>
+	<b>Email:</b> <%= @contact.email %>
+</p>
+<p>
+	<b>Address:</b> <%= @contact.address %>
+</p>
+
+<%= link_to "<<Back", contacts_path %>
+
+<%= link_to "Delete", contact_path(@contact), method: :delete %>
