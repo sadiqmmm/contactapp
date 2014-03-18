@@ -11,6 +11,6 @@
 	<b>Address:</b> <%= @contact.address %>
 </p>
 
-<%= link_to "<<Back", contacts_path %>
+<%= link_to "<<Back", contacts_path, class: "label label-default" %> | 
 
-<%= link_to "Delete", contact_path(@contact), method: :delete %>
+<%= link_to "Delete", contact_path(@contact), method: :delete, class: "label label-danger" %>
